@@ -43,6 +43,7 @@ export interface MultiSelectProps {
     fixedHeight?: boolean;
     hideTags?: boolean,
     canAddItems?: boolean;
+    onToggleList?: () => void;
     onAddItem?: (newItems: any[]) => void;
     onChangeInput?: (text: string) => void;
     displayKey?: string;
@@ -50,6 +51,7 @@ export interface MultiSelectProps {
     flatListProps?: FlatListProps<any>;
     filterMethod?: string;
     noItemsText?: string;
+    selectedText?: string;
 }
 
 export default class MultiSelect extends React.Component<MultiSelectProps> {
